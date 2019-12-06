@@ -40,7 +40,7 @@ class TocMachine(GraphMachine):
     def is_going_to_twotofive(self,event):
         text = event.message.text
         return text.lower() == "two to five"
-    def is_going_to_threetofive(self,event):
+    def is_going_to_threetofour(self,event):
         text = event.message.text
         return text.lower() == "three to four"
     def is_going_to_threetofive(self,event):
