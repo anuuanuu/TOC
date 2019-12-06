@@ -23,8 +23,7 @@ class TocMachine(GraphMachine):
         print("I'm entering advanced")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "enter '12'
-                          '13'")
+        send_text_message(reply_token, "enter '12'\n'13'")
        
         self.go_back()
 
@@ -35,8 +34,7 @@ class TocMachine(GraphMachine):
         print("I'm entering showfunction")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "'advanced':
-'help'")
+        send_text_message(reply_token, "'advanced':\n'help'")
         self.go_back()
 
     def on_exit_state2(self):
