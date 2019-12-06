@@ -19,7 +19,7 @@ class TocMachine(GraphMachine):
         print("I'm entering state1")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "Trigger state1")
+        send_text_message(reply_token, "Trigger state")
         f=open(r'TOCdata')
         f=readlines()
         send_text_message(reply_token, f)
