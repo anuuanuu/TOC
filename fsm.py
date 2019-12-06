@@ -153,7 +153,7 @@ class TocMachine(GraphMachine):
         print("I'm entering showfunction")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "'advanced':升星所需材料\n'help':查詢指令\n''")
+        send_text_message(reply_token, "'advanced':升星所需材料\n'help':查詢指令\n'references':推薦參考資料\n'initial':回到選單")
         self.go_back()
     
     def on_enter_references(self, event):
