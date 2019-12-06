@@ -51,8 +51,8 @@ class TocMachine(GraphMachine):
 #advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 Fragment of Memory")
-        self.go_back()
+        send_text_message(reply_token, "60 Fragment of Memory秘石")
+        self.go_back_advanced()
         
     def on_enter_onetothree(self,event):
         reply_token = event.reply_token
