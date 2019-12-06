@@ -35,13 +35,13 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return text.lower() == "one to five"
     
-###
+#
     def on_enter_advanced(self, event):
         
         reply_token = event.reply_token
         send_text_message(reply_token, "enter\n '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
         #self.go_back()
-##advanced ___
+#advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
