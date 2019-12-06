@@ -41,7 +41,7 @@ class TocMachine(GraphMachine):
     ##advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 '女神的秘石'")
+        send_text_message(reply_token, "60 'god'stone'")
         self.go_back_advanced()
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
