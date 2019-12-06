@@ -21,8 +21,9 @@ class TocMachine(GraphMachine):
 ###
     def on_enter_advanced(self, event):
         print("I'm entering advanced")
+        
         reply_token = event.reply_token
-        send_text_message(reply_token, "enter '12':from 1 to 2 lv\n'13':from 1 to 3 lv")
+        send_text_message(reply_token, "enter '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
         self.go_back()
 
     def on_exit_advanced(self):
