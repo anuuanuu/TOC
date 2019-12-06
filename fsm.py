@@ -61,9 +61,6 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()
-        
-    def on_exit_onetotwo(self):
-#
     def on_exit_advanced(self):
         print("Leaving advanced")
 
