@@ -111,8 +111,8 @@ machine = TocMachine(
         },
         #
         {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
-        {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive
-                                                     "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive"], "dest": "advanced"},
+        {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive",
+                                                   "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive"], "dest": "advanced"},
     ],
     initial="user",
     auto_transitions=False,
