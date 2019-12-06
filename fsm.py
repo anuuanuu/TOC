@@ -72,7 +72,7 @@ class TocMachine(GraphMachine):
         
     def on_enter_onetothree(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "260 女神的秘石 或 130 記憶碎片")
+        send_text_message(reply_token, "260 god stone or 130 memory")
         self.go_back_advanced()
         
     def on_enter_onetofour(self,event):
