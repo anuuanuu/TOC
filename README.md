@@ -1,4 +1,4 @@
-# TOC Project 2020
+# Helper of Game 2020
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/dc7fa47fcd809b99d087/maintainability)](https://codeclimate.com/github/NCKU-CCS/TOC-Project-2020/maintainability)
 
@@ -9,7 +9,8 @@ A Line bot based on a finite state machine
 Bot名稱:AnuuTOC
 
 Bot ID:@240llpxv
-
+## Setup
+  python3.6
 
 ## Finite State Machine
 ![fsm](./img/show-fsm.png)
