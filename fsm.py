@@ -43,15 +43,15 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()
-    def on_enter_onetotwo(self,event):
+    def on_enter_onetothree(self,event):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()     
-    def on_enter_onetotwo(self,event):
+    def on_enter_onetofour(self,event):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()
-    def on_enter_onetotwo(self,event):
+    def on_enter_onetofive(self,event):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()
