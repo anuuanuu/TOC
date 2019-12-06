@@ -62,10 +62,15 @@ machine = TocMachine(
             "dest": "onetofive",
             "conditions": "is_going_to_onetofive",
         },
+        {
+            "trigger": "advance",
+            "source": ["advanced","state2","showfunction","onetotwo","onetothree","onetofour","onetofive"],
+            "dest": "user",
+            "conditions": "is_going_to_user",
+        },
         #
         {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
         {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive"], "dest": "advanced"},
-        {"trigger": "advance", "source": ["advanced","state2","showfunction","onetotwo","onetothree","onetofour","onetofive"], "dest": "user" ,"conditions": "is_going_to_user"},
     ],
     initial="user",
     auto_transitions=False,
