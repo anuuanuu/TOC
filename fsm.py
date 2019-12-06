@@ -57,7 +57,7 @@ class TocMachine(GraphMachine):
     def on_enter_advanced(self, event):
         
         reply_token = event.reply_token
-        send_text_message(reply_token, "enter\n '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
+        send_text_message(reply_token, "enter n to m\n  n<m \n ex:one to two\n 從n星升到m星")
         #self.go_back()
     def on_enter_user(self, event):
         
@@ -67,47 +67,47 @@ class TocMachine(GraphMachine):
 #advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 女神的秘石 或 30 記憶碎片")
+        send_text_message(reply_token, "需要 60 女神的秘石 或 30 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
         
     def on_enter_onetothree(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "260 女神的秘石 或 130 記憶碎片")
+        send_text_message(reply_token, "需要 260 女神的秘石 或 130 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
         
     def on_enter_onetofour(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "500 女神的秘石 或 250 記憶碎片")
+        send_text_message(reply_token, "需要 500 女神的秘石 或 250 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
         
     def on_enter_onetofive(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "800 女神的秘石 或 400 記憶碎片")
+        send_text_message(reply_token, "需要 800 女神的秘石 或 400 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     #2-345
     def on_enter_twotothree(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "200 女神的秘石 或 100 記憶碎片")
+        send_text_message(reply_token, "需要 200 女神的秘石 或 100 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     def on_enter_twotofour(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "440 女神的秘石 或 220 記憶碎片")
+        send_text_message(reply_token, "需要 440 女神的秘石 或 220 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     def on_enter_twotofive(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "740 女神的秘石 或 370 記憶碎片")
+        send_text_message(reply_token, "需要 740 女神的秘石 或 370 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     def on_enter_threetofour(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "240 女神的秘石 或 120 記憶碎片")
+        send_text_message(reply_token, "需要 240 女神的秘石 或 120 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     def on_enter_threetofive(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "300 女神的秘石 或 150 記憶碎片")
+        send_text_message(reply_token, "需要 300 女神的秘石 或 150 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     def on_enter_fourtofive(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "540 女神的秘石 或 270 記憶碎片")
+        send_text_message(reply_token, "需要 540 女神的秘石 或 270 記憶碎片\n enter n to m\n  n<m \n ex:one to two\n 從n星升到m星\n or enter 'initial':return menu")
         self.go_back_advanced()
     #
     #def on_exit_advanced(self):
