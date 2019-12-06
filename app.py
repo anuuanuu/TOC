@@ -44,19 +44,19 @@ machine = TocMachine(
             "dest": "onetotwo",
             "conditions": "is_going_to_onetotwo",
         },
-           {
+        {
             "trigger": "advance",
             "source": "advanced",
             "dest": "onetothree",
             "conditions": "is_going_to_onetothree",
         },
-           {
+        {
             "trigger": "advance",
             "source": "advanced",
             "dest": "onetofour",
             "conditions": "is_going_to_onetofour",
         },
-           {
+        {
             "trigger": "advance",
             "source": "advanced",
             "dest": "onetofive",
