@@ -131,7 +131,7 @@ machine = TocMachine(
         #ref.
         {
             "trigger": "advance",
-            "source": ["advanced","state2","showfunction"],
+            "source": ["advanced","references","showfunction","user"],
             "dest": "user",
             "conditions": "is_going_to_user",
         },
