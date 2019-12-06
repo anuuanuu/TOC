@@ -18,22 +18,38 @@ class TocMachine(GraphMachine):
     def is_going_to_showfunction(self,event):
         text = event.message.text
         return text.lower() == "help"
-    
+    #advanced
     def is_going_to_onetotwo(self,event):
         text = event.message.text
         return text.lower() == "one to two"
-    
     def is_going_to_onetothree(self,event):
         text = event.message.text
         return text.lower() == "one to three"
-    
     def is_going_to_onetofour(self,event):
         text = event.message.text
         return text.lower() == "one to four"
-    
     def is_going_to_onetofive(self,event):
         text = event.message.text
         return text.lower() == "one to five"
+    def is_going_to_twotothree(self,event):
+        text = event.message.text
+        return text.lower() == "two to three"
+    def is_going_to_twotofour(self,event):
+        text = event.message.text
+        return text.lower() == "two to four"
+    def is_going_to_twotofive(self,event):
+        text = event.message.text
+        return text.lower() == "two to five"
+    def is_going_to_threetofive(self,event):
+        text = event.message.text
+        return text.lower() == "three to five"
+    def is_going_to_threetofive(self,event):
+        text = event.message.text
+        return text.lower() == "three to five"
+    def is_going_to_fourtofive(self,event):
+        text = event.message.text
+        return text.lower() == "four to five"
+    ##advinced
     def is_going_to_user(self,event):
         text = event.message.text
         return text.lower() == "initial"
@@ -51,23 +67,49 @@ class TocMachine(GraphMachine):
 #advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 Fragment of Memory秘石")
+        send_text_message(reply_token, "60 女神的秘石 或 30 記憶碎片")
         self.go_back_advanced()
         
     def on_enter_onetothree(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 Fragment of Memory")
+        send_text_message(reply_token, "260 女神的秘石 或 130 記憶碎片")
         self.go_back_advanced()
         
     def on_enter_onetofour(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 Fragment of Memory")
+        send_text_message(reply_token, "500 女神的秘石 或 250 記憶碎片")
         self.go_back_advanced()
         
     def on_enter_onetofive(self,event):
         reply_token = event.reply_token
-        send_text_message(reply_token, "60 Fragment of Memory")
+        send_text_message(reply_token, "800 女神的秘石 或 400 記憶碎片")
         self.go_back_advanced()
+    #2-345
+    def on_enter_twotothree(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "200 女神的秘石 或 100 記憶碎片")
+        self.go_back_advanced()
+    def on_enter_twotofour(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "440 女神的秘石 或 220 記憶碎片")
+        self.go_back_advanced()
+    def on_enter_twotofive(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "740 女神的秘石 或 370 記憶碎片")
+        self.go_back_advanced()
+    def on_enter_threetofour(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "240 女神的秘石 或 120 記憶碎片")
+        self.go_back_advanced()
+    def on_enter_threetofive(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "300 女神的秘石 或 150 記憶碎片")
+        self.go_back_advanced()
+    def on_enter_fourtofive(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "540 女神的秘石 或 270 記憶碎片")
+        self.go_back_advanced()
+    #
     #def on_exit_advanced(self):
     #    print("Leaving advanced")
 
