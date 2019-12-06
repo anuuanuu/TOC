@@ -14,7 +14,11 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["user", "advanced", "showfunction","state2","onetotwo","onetothree","onetofour","onetofive"],
+    states=["user", "advanced", "showfunction","state2","onetotwo","onetothree","onetofour","onetofive",
+           "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive",
+           
+           
+           ],
     transitions=[
         #1
         {
@@ -62,6 +66,43 @@ machine = TocMachine(
             "dest": "onetofive",
             "conditions": "is_going_to_onetofive",
         },
+        {#
+            "trigger": "advance",
+            "source": "advanced",
+            "dest": "twotothree",
+            "conditions": "is_going_to_twotothree",
+        },
+        {
+            "trigger": "advance",
+            "source": "advanced",
+            "dest": "twotofour",
+            "conditions": "is_going_to_twotofour",
+        },
+        {
+            "trigger": "advance",
+            "source": "advanced",
+            "dest": "twotofive",
+            "conditions": "is_going_to_twotofive",
+        },
+        {
+            "trigger": "advance",
+            "source": "advanced",
+            "dest": "threetofour",
+            "conditions": "is_going_to_threetofour",
+        },
+        {
+            "trigger": "advance",
+            "source": "advanced",
+            "dest": "threetofive",
+            "conditions": "is_going_to_threetofive",
+        },
+        {
+            "trigger": "advance",
+            "source": "advanced",
+            "dest": "fourtofive",
+            "conditions": "is_going_to_fourtofive",
+        },
+        #advanced end#
         {
             "trigger": "advance",
             "source": ["advanced","state2","showfunction","onetotwo","onetothree","onetofour","onetofive"],
@@ -70,7 +111,8 @@ machine = TocMachine(
         },
         #
         {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
-        {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive"], "dest": "advanced"},
+        {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive
+                                                     "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive"], "dest": "advanced"},
     ],
     initial="user",
     auto_transitions=False,
