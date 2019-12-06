@@ -104,8 +104,8 @@ def webhook_handler():
         print(f"REQUEST BODY: \n{body}")
         response = machine.advance(event)
         if response == False:
+            send_text_message(event.reply_token, "Not Entering any State")
             f=open('/TOCdata.txt')
-            
             send_text_message(reply_token, f.readline())
             f=close()
             send_text_message(event.reply_token, "Not Entering any State")
