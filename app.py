@@ -65,7 +65,7 @@ machine = TocMachine(
         #
         {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
         {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive"], "dest": "advanced"},
-
+        {"trigger": "advance", "source": ["advanced","state2","showfunction","onetotwo","onetothree","onetofour","onetofive"]], "dest": "user"},
     ],
     initial="user",
     auto_transitions=False,
