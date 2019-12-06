@@ -22,6 +22,7 @@ class TocMachine(GraphMachine):
         send_text_message(reply_token, "Trigger state1")
         f=open(r'TOCdata')
         f=readlines()
+        send_text_message(reply_token, f)
         f=close()
         self.go_back()
 
