@@ -24,7 +24,6 @@ class TocMachine(GraphMachine):
 
         reply_token = event.reply_token
         send_text_message(reply_token, "enter '12'\n'13'")
-       
         self.go_back()
 
     def on_exit_advanced(self):
