@@ -159,7 +159,7 @@ class TocMachine(GraphMachine):
     def on_enter_references(self, event):
         reply_token = event.reply_token
         send_text_message(reply_token, "'mana':技能等級花費瑪娜\n'stamina':體力計算\n'exp':角色所需經驗")
-        self.go_back()
+        #self.go_back()
     #def on_exit_showfunction(self):
     #def on_exit_state2(self):
      #   print("Leaving state2")
