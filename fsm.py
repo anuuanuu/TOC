@@ -117,7 +117,7 @@ class TocMachine(GraphMachine):
         print("I'm entering showfunction")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "'advanced':\n'help")
+        send_text_message(reply_token, "'advanced':升星所需材料\n'help':查詢指令\n''")
         self.go_back()
         
     #def on_exit_showfunction(self):
