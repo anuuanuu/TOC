@@ -37,7 +37,7 @@ class TocMachine(GraphMachine):
         
         reply_token = event.reply_token
         send_text_message(reply_token, "enter\n '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
-        self.go_back()
+        #self.go_back()
     ##advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
