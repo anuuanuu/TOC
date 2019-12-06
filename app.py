@@ -37,7 +37,7 @@ machine = TocMachine(
             "dest": "showfunction",
             "conditions": "is_going_to_showfunction",
         },
-        {"trigger": "go_back", "source": ["advanced", "state2"], "dest": "user"},
+        {"trigger": "go_back", "source": ["advanced", "state2","showfunction"], "dest": "user"},
     ],
     initial="user",
     auto_transitions=False,
