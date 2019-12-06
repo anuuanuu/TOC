@@ -104,7 +104,7 @@ def webhook_handler():
         print(f"REQUEST BODY: \n{body}")
         response = machine.advance(event)
         if response == False:
-            f=open(r'TOCdata.txt')
+            f=open('/TOCdata.txt')
             
             send_text_message(reply_token, f.readline())
             f=close()
