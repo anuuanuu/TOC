@@ -66,7 +66,7 @@ machine = TocMachine(
             "dest": "onetofive",
             "conditions": "is_going_to_onetofive",
         },
-        {#
+        {
             "trigger": "advance",
             "source": "advanced",
             "dest": "twotothree",
