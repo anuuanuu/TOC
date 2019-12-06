@@ -18,14 +18,44 @@ class TocMachine(GraphMachine):
     def is_going_to_showfunction(self,event):
         text = event.message.text
         return text.lower() == "help"
+    def is_going_to_onetotwo(self,event):
+        text = event.message.text
+        return text.lower() == "onetotwo"
+    def is_going_to_onetothree(self,event):
+        text = event.message.text
+        return text.lower() == "onetothree"
+    def is_going_to_onetofour(self,event):
+        text = event.message.text
+        return text.lower() == "onetofour"
+    def is_going_to_onetofive(self,event):
+        text = event.message.text
+        return text.lower() == "onetofive"
+    
 ###
     def on_enter_advanced(self, event):
         print("I'm entering advanced")
         
         reply_token = event.reply_token
-        send_text_message(reply_token, "enter '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
+        send_text_message(reply_token, "enter\n '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
         self.go_back()
-
+    ##advanced ___
+    def on_enter_onetotwo(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "60 '女神的秘石'")
+        self.go_back_advanced()
+    def on_enter_onetotwo(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "60 '女神的秘石'")
+        self.go_back_advanced()     
+    def on_enter_onetotwo(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "60 '女神的秘石'")
+        self.go_back_advanced()
+    def on_enter_onetotwo(self,event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "60 '女神的秘石'")
+        self.go_back_advanced()
+    ###
     def on_exit_advanced(self):
         print("Leaving advanced")
 
