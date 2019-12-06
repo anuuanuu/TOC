@@ -13,7 +13,7 @@ Bot ID:@240llpxv
   python3.6
 
 ## Finite State Machine
-!(/fsm.png)
+![image of fsm](https://github.com/anuuanuu/TOC/blob/master/fsm.png)
 
 
 
