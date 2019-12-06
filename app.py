@@ -63,7 +63,7 @@ machine = TocMachine(
             "conditions": "is_going_to_onetofive",
         },
         #
-        {"trigger": "go_back", "source": ["state2","showfunction"], "dest": "user"},
+        {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
         {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive"], "dest": "advanced"},
 
     ],
