@@ -105,14 +105,14 @@ machine = TocMachine(
         #advanced end#
         {
             "trigger": "advance",
-            "source": ["advanced","state2","showfunction","onetotwo","onetothree","onetofour","onetofive"],
+            "source": ["advanced","state2","showfunction"],
             "dest": "user",
             "conditions": "is_going_to_user",
         },
         #
         {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
         {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive",
-                                                   "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive"], "dest": "advanced"},
+                                                   "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive"], "dest": "advanced"}
     ],
     initial="user",
     auto_transitions=False,
