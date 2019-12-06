@@ -34,13 +34,20 @@ class TocMachine(GraphMachine):
     def is_going_to_onetofive(self,event):
         text = event.message.text
         return text.lower() == "one to five"
-    
+    def is_going_to_user(self,event):
+        text = event.message.text
+        return text.lower() == "initial"
 #
     def on_enter_advanced(self, event):
         
         reply_token = event.reply_token
         send_text_message(reply_token, "enter\n '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
         self.go_back()
+    def on_enter_user(self, event):
+        
+        reply_token = event.reply_token
+        send_text_message(reply_token, "initial")
+
 #advanced ___
     def on_enter_onetotwo(self,event):
         reply_token = event.reply_token
