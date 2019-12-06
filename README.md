@@ -15,11 +15,12 @@ Bot ID:@240llpxv
 ![fsm](./img/show-fsm.png)
 
 
-refference: https://hackmd.io/@ccw/B1Xw7E8kN?type=view#Q2-如何在-Heroku-使用-pygraphviz
 
 ## Reference
 [Pipenv](https://medium.com/@chihsuan/pipenv-更簡單-更快速的-python-套件管理工具-135a47e504f4) 
 refference: https://hackmd.io/@ccw/B1Xw7E8kN?type=view#Q2-如何在-Heroku-使用-pygraphviz
+https://hackmd.io/@ccw/B1Xw7E8kN?type=view#Q2-如何在-Heroku-使用-pygraphviz
+https://pcredivewiki.tw/
 
 ## Note
 If you any question,sent email to 'forever3069@gmail.com'.
