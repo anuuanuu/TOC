@@ -20,20 +20,19 @@ class TocMachine(GraphMachine):
         return text.lower() == "help"
     def is_going_to_onetotwo(self,event):
         text = event.message.text
-        return text.lower() == "onetotwo"
+        return text.lower() == "one to two"
     def is_going_to_onetothree(self,event):
         text = event.message.text
-        return text.lower() == "onetothree"
+        return text.lower() == "one to three"
     def is_going_to_onetofour(self,event):
         text = event.message.text
-        return text.lower() == "onetofour"
+        return text.lower() == "one to four"
     def is_going_to_onetofive(self,event):
         text = event.message.text
-        return text.lower() == "onetofive"
+        return text.lower() == "one to five"
     
 ###
     def on_enter_advanced(self, event):
-        print("I'm entering advanced")
         
         reply_token = event.reply_token
         send_text_message(reply_token, "enter\n '12':from 1 to 2 lv \n '13':from 1 to 3 lv")
@@ -55,6 +54,7 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()
+    def on_exit_onetotwo(self):
 #
     def on_exit_advanced(self):
         print("Leaving advanced")
@@ -63,7 +63,7 @@ class TocMachine(GraphMachine):
         print("I'm entering showfunction")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "'advanced':\n'help'")
+        send_text_message(reply_token, "'advanced':\n'help'幫助")
         self.go_back()
 
     def on_exit_state2(self):
