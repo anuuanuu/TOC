@@ -68,8 +68,8 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "60 Fragment of Memory")
         self.go_back_advanced()
-    def on_exit_advanced(self):
-        print("Leaving advanced")
+    #def on_exit_advanced(self):
+    #    print("Leaving advanced")
 
     def on_enter_showfunction(self, event):
         print("I'm entering showfunction")
@@ -79,5 +79,5 @@ class TocMachine(GraphMachine):
         self.go_back()
         
     #def on_exit_showfunction(self):
-    def on_exit_state2(self):
-        print("Leaving state2")
+    #def on_exit_state2(self):
+     #   print("Leaving state2")
