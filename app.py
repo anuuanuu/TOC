@@ -15,7 +15,7 @@ load_dotenv()
 
 machine = TocMachine(
     states=["user", "advanced", "showfunction","state2","onetotwo","onetothree","onetofour","onetofive",
-           "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive",
+           "twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive","references","mana","stamina","exp",
            
            
            ],
@@ -103,6 +103,32 @@ machine = TocMachine(
             "conditions": "is_going_to_fourtofive",
         },
         #advanced end#
+        #ref.
+        {
+            "trigger": "advance",
+            "source": "user",
+            "dest": "references",
+            "conditions": "is_going_to_references",
+        },
+        {
+            "trigger": "advance",
+            "source": "references",
+            "dest": "mana",
+            "conditions": "is_going_to_mana",
+        },
+        {
+            "trigger": "advance",
+            "source": "references",
+            "dest": "stamina",
+            "conditions": "is_going_to_stamina",
+        },
+        {
+            "trigger": "advance",
+            "source": "references",
+            "dest": "exp",
+            "conditions": "is_going_to_exp",
+        },
+        #ref.
         {
             "trigger": "advance",
             "source": ["advanced","state2","showfunction"],
@@ -110,7 +136,7 @@ machine = TocMachine(
             "conditions": "is_going_to_user",
         },
         #
-        {"trigger": "go_back", "source": ["advanced","state2","showfunction"], "dest": "user"},
+        {"trigger": "go_back", "source": ["advanced","state2","showfunction","mana","stamina","exp"], "dest": "user"},
         {"trigger": "go_back_advanced", "source": ["onetotwo","onetothree","onetofour","onetofive","twotothree","twotofour","twotofive","threetofour","threetofive","fourtofive"], "dest": "advanced"}
     ],
     initial="user",
