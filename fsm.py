@@ -18,6 +18,11 @@ class TocMachine(GraphMachine):
     def is_going_to_showfunction(self,event):
         text = event.message.text
         return text.lower() == "help"
+    
+    #def is_going_to_references(self,event):
+     #   text = event.message.text
+    #    return text.lower() == "references"
+    
     #advanced
     def is_going_to_onetotwo(self,event):
         text = event.message.text
@@ -50,6 +55,37 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return text.lower() == "four to five"
     ##advinced
+    ##references
+    def is_going_to_references(self,event):
+        text = event.message.text
+        return text.lower() == "references"
+    def is_going_to_mana(self,event):
+        text = event.message.text
+        return text.lower() == "mana"
+    def is_going_to_stamina(self,event):
+        text = event.message.text
+        return text.lower() == "stamina"
+    def is_going_to_exp(self,event):
+        text = event.message.text
+        return text.lower() == "exp"
+    #def on_enter_references(self, event):
+     #   reply_token = event.reply_token
+    #    send_text_message(reply_token, "'mana'")
+   #     self.go_back()
+    def on_enter_mana(self, event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "https://pcredivewiki.tw/Other/Mana")
+        self.go_back()
+    def on_enter_stamina(self, event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "https://pcredivewiki.tw/Other/Stamina")
+        self.go_back()
+    def on_enter_exp(self, event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "https://pcredivewiki.tw/Other/Exp")
+        self.go_back()
+      
+    ##references
     def is_going_to_user(self,event):
         text = event.message.text
         return text.lower() == "initial"
@@ -119,7 +155,11 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "'advanced':升星所需材料\n'help':查詢指令\n''")
         self.go_back()
-        
+    
+    def on_enter_references(self, event):
+        reply_token = event.reply_token
+        send_text_message(reply_token, "'mana':技能等級花費瑪娜\n'stamina':體力計算\n'exp':角色所需經驗")
+        self.go_back()
     #def on_exit_showfunction(self):
     #def on_exit_state2(self):
      #   print("Leaving state2")
