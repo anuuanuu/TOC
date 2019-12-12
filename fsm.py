@@ -6,6 +6,9 @@ from utils import send_text_message
 class TocMachine(GraphMachine):
     def __init__(self, **machine_configs):
         self.machine = GraphMachine(model=self, **machine_configs)
+    def is_going_to_ex(self,event):
+        text = event.message.text
+        return text.lower() == "hello"
 #1
     def is_going_to_advanced(self, event):
         text = event.message.text
@@ -159,6 +162,12 @@ class TocMachine(GraphMachine):
     def on_enter_references(self, event):
         reply_token = event.reply_token
         send_text_message(reply_token, "'mana':技能等級花費瑪娜\n'stamina':體力計算\n'exp':角色所需經驗")
+    def on_enter_ex(self, event):
+        print("I'm entering showfunction")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "I am ex")
+        self.go_back()
         #self.go_back()
     #def on_exit_showfunction(self):
     #def on_exit_state2(self):
